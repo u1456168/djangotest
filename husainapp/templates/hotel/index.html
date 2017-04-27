@@ -5,10 +5,10 @@
 
 
          {% if categories %}
-           <ul>
+           <ul class="list-group">
              {% for category in categories %}
                <!-- <a href ="hotels/categories/{{category.id}}"><li> -->
-               <a href ="{% url 'hotel:hoteldetails' category.id %}"><li>
+               <a href ="{% url 'hotel:hoteldetails' category.id %}"><li class="list-group-item">
                  {{ category.name }}
                </li></a>
                {% endfor %}
