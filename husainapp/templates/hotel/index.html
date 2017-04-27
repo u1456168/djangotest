@@ -1,0 +1,22 @@
+
+{% extends "layouts/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+
+         {% if categories %}
+           <ul>
+             {% for category in categories %}
+               <a href ="hotels/categories/{{category.id}}"><li>
+                 {{ category.name }}
+               </li></a>
+               {% endfor %}
+           </ul>
+           {% else %}
+             <strong>No categories</strong>
+            {% endif %}
+
+
+      <a href="/hotel/about/">About</a>
+      <img src="{% static "images/tajmahal.jpg" %}"  alt="Picture of Taj India" />
+ {% endblock %}
