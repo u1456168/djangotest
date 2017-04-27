@@ -6,10 +6,6 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-class Catform(forms.ModelForm):
-    class Meta:
-        model = Category;
-        fields = ['name'];
 
 
 class Page(models.Model):

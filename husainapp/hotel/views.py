@@ -3,7 +3,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from hotel.models import Category
-from hotel.models import Catform
+from hotel.forms import Catform
 
 def index(request):
         category_list = Category.objects.all()
